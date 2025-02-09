@@ -179,7 +179,6 @@ class Game:
             return # Don't run game logic if not playing
 
         for event in events:
-            print(event.type)
             self.handle_input(event) # Handle events every frame
         self.update()
         self.draw()
