@@ -5,7 +5,7 @@ class Player(pygame.sprite.Sprite):
     def __init__(self, spawn_position, image_path):
         super().__init__()
         self.image = pygame.image.load(image_path).convert_alpha()
-        self.image = pygame.transform.scale(self.image, (40, 60)) # Adjust player size if needed
+        self.image = pygame.transform.scale(self.image, (30, 40))
         self.rect = self.image.get_rect(topleft=spawn_position)
         self.velocity = pygame.math.Vector2(0, 0)
         self.speed = 5
